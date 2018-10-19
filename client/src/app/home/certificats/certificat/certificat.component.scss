@@ -1,0 +1,20 @@
+.loading {
+  position: relative;
+}
+
+.certificate {
+  display: flex !important;
+  flex-direction: row;
+  &__info {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__valid {
+    color: green;
+  }
+
+  &__revoked {
+    color: red;
+  }
+}

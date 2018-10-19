@@ -1,0 +1,16 @@
+<div class="form-container">
+  <app-loading #loading></app-loading>
+  <form #transferForm="ngForm">
+
+    <mat-form-field floatLabel="true">
+      <input matInput placeholder="Transfer to" required name="transferToKey" [(ngModel)]="transferModel.key">
+    </mat-form-field>
+
+    <mat-form-field floatLabel="true">
+      <input matInput placeholder="Amount" type="number" required name="amount" [(ngModel)]="transferModel.amount">
+    </mat-form-field>
+
+
+    <button type="button" (click)="transfer()" mat-raised-button color="primary">Transfer</button>
+  </form>
+</div>

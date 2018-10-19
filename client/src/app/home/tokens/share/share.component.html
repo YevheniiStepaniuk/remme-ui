@@ -1,0 +1,8 @@
+<div class="container">
+      <h1>Your public key</h1>
+      <mat-form-field floatLabel="true">
+        <input #pKey matInput placeholder="Public Key" readonly name="transferToKey" [ngModel]="key">
+      </mat-form-field>
+
+      <button type="button" color="primary" (click)="copy()" mat-raised-button>Copy</button>
+  </div>

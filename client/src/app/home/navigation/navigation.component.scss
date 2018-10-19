@@ -1,0 +1,23 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  max-width: 400px;
+  width: 300px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  padding-right: 20px;
+  z-index: 3;
+}
+
+.toolbar-separator {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-height: 10vh;
+}

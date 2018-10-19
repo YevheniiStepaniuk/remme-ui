@@ -1,0 +1,5 @@
+<div class="dropzone" [ngxFileDropzone]="readMode"  (fileDrop)="onFilePicked($event)" (dragenter)="onDragEnter($event)" (dragleave)="onDragOver($event)">
+  Upload keystore file here
+  <button type="button" mat-raised-button [ngxFilePicker]="readMode" multiple
+    (filePick)="onFilePicked($event)">Browse</button>
+</div>

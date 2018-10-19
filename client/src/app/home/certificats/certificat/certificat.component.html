@@ -1,0 +1,23 @@
+<mat-list-item>
+  <mat-icon matListIcon>verified_user</mat-icon>
+  <div matLine class="certificate">
+    <div class="certificate__info">{{certificat.key}}</div>
+    <mat-spinner diameter="20" *ngIf="loading"></mat-spinner>
+  </div>
+  <div matLine>
+    <span class="icons" *ngIf="!loading">
+      <span>
+        STATUS:
+      </span>
+      <span *ngIf="isValid" class="certificate__valid">
+        VALID
+      </span>
+      <span *ngIf="!isValid" class="certificate__revoked">
+        REVOKED
+      </span>
+      <button mat-stroked-button (click)="onRevoke()" *ngIf="isValid">
+        REVOKE
+      </button>
+    </span>
+  </div>
+</mat-list-item>
